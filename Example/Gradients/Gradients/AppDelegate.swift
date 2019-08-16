@@ -7,7 +7,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   var window: UIWindow?
   var navigationController: UINavigationController?
 
-  func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
     window = UIWindow(frame: UIScreen.main.bounds)
 
     Component.configure = { component in
@@ -22,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
       tableView?.separatorColor = Color.cellSeparator
     }
 
-    Configuration.registerDefault(view: GradientListCell.self)
+    Configuration.shared.registerDefault(view: GradientListCell.self)
 
     let controller = GradientsController(title: "Gradients")
     let navigationController = UINavigationController(rootViewController: controller)
@@ -40,8 +40,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     navigationBar.barStyle = .black
     navigationBar.isTranslucent = false
     navigationBar.titleTextAttributes = [
-      NSForegroundColorAttributeName: Color.navigationBarForeground,
-      NSFontAttributeName: Font.navigationBar
+        NSAttributedString.Key.foregroundColor: Color.navigationBarForeground,
+        NSAttributedString.Key.font: Font.navigationBar
     ]
     navigationBar.tintColor = Color.navigationBarForeground
     navigationBar.barTintColor = UIColor(red:0.333, green:0.220, blue:0.478, alpha: 1)

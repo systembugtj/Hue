@@ -1,6 +1,6 @@
 source 'https://github.com/CocoaPods/Specs.git'
 
-platform :ios, '9.0'
+platform :ios, '10.0'
 
 use_frameworks!
 inhibit_all_warnings!
@@ -8,8 +8,8 @@ inhibit_all_warnings!
 target 'Hex'
 
 pod 'Hue', path: '../../'
-pod 'Imaginary', git: 'https://github.com/hyperoslo/Imaginary'
-pod 'Cache', git: 'https://github.com/hyperoslo/Cache'
-pod 'Spots', git: 'https://github.com/hyperoslo/Spots'
-pod 'Sugar', git: 'https://github.com/hyperoslo/Sugar'
-pod 'Tailor'
+pod 'Imaginary', git: 'https://github.com/systembugtj/Imaginary.git'
+pod 'Cache', git: 'https://github.com/systembugtj/Cache.git'
+pod 'Spots', git: 'https://github.com/systembugtj/Spots'
+pod 'Sugar', git: 'https://github.com/systembugtj/Sugar'
+pod 'Tailor', git: 'https://github.com/systembugtj/Tailor'

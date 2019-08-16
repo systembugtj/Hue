@@ -7,12 +7,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   var window: UIWindow?
   var navigationController: UINavigationController?
 
-  func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
     window = UIWindow(frame: UIScreen.main.bounds)
 
-    Configuration.registerDefault(view: GridHexCell.self)
-    Component.configure = {
+    Configuration.shared.registerDefault(view: GridHexCell.self)
+    
+        Component.configure = {
       $0.collectionView?.backgroundColor = UIColor.black
     }
 

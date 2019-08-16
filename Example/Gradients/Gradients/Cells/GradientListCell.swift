@@ -3,6 +3,10 @@ import Spots
 import Hue
 
 class GradientListCell: UITableViewCell, ItemConfigurable {
+    func computeSize(for item: Item, containerSize: CGSize) -> CGSize {
+         return CGSize(width: 64, height: 64)
+    }
+    
 
   lazy var selectedView: UIView = {
     let view = UIView()

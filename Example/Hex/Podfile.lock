@@ -1,61 +1,60 @@
 PODS:
-  - Cache (3.3.0):
-    - SwiftHash (~> 1.4.0)
-  - Hue (2.0.1)
-  - Imaginary (2.0.0):
-    - Cache (~> 3.0)
-  - Spots (6.0.3):
-    - Spots/Core (= 6.0.3)
-  - Spots/Core (6.0.3):
-    - Cache (~> 3.0)
-    - Tailor (~> 2.0)
-  - Sugar (3.1.2)
-  - SwiftHash (1.4.0)
-  - Tailor (2.2.1)
+  - Cache (5.3.0)
+  - Hue (5.0.1)
+  - Imaginary (5.0.1):
+    - Cache (~> 5.0)
+  - Spots (7.6.0):
+    - Cache
+  - Sugar (5.0.0)
+  - Tailor (5.0.0)
 
 DEPENDENCIES:
-  - Cache (from `https://github.com/hyperoslo/Cache`)
+  - Cache (from `https://github.com/systembugtj/Cache.git`)
   - Hue (from `../../`)
-  - Imaginary (from `https://github.com/hyperoslo/Imaginary`)
-  - Spots (from `https://github.com/hyperoslo/Spots`)
-  - Sugar (from `https://github.com/hyperoslo/Sugar`)
-  - Tailor
+  - Imaginary (from `https://github.com/systembugtj/Imaginary.git`)
+  - Spots (from `https://github.com/systembugtj/Spots`)
+  - Sugar (from `https://github.com/systembugtj/Sugar`)
+  - Tailor (from `https://github.com/systembugtj/Tailor`)
 
 EXTERNAL SOURCES:
   Cache:
-    :git: https://github.com/hyperoslo/Cache
+    :git: https://github.com/systembugtj/Cache.git
   Hue:
     :path: "../../"
   Imaginary:
-    :git: https://github.com/hyperoslo/Imaginary
+    :git: https://github.com/systembugtj/Imaginary.git
   Spots:
-    :git: https://github.com/hyperoslo/Spots
+    :git: https://github.com/systembugtj/Spots
   Sugar:
-    :git: https://github.com/hyperoslo/Sugar
+    :git: https://github.com/systembugtj/Sugar
+  Tailor:
+    :git: https://github.com/systembugtj/Tailor
 
 CHECKOUT OPTIONS:
   Cache:
-    :commit: 4699caf4a994996840826a504270fb1ea6ac0a4f
-    :git: https://github.com/hyperoslo/Cache
+    :commit: d2fb0c1d69b5e2d845b7fe1bcef3a9a70fd52341
+    :git: https://github.com/systembugtj/Cache.git
   Imaginary:
-    :commit: 3176aad7a2834a966074f859fd133497532dd4d9
-    :git: https://github.com/hyperoslo/Imaginary
+    :commit: 600adeaab9b7979922cdf2170b37f186590577b3
+    :git: https://github.com/systembugtj/Imaginary.git
   Spots:
-    :commit: b99fce2737a2380fb516f1355c70ac5d4e85b356
-    :git: https://github.com/hyperoslo/Spots
+    :commit: cc365ae8a1462b8ff1738b77717eb1e6416ad868
+    :git: https://github.com/systembugtj/Spots
   Sugar:
-    :commit: 60dfbe15325ef31cce29db4b59db7e7590c095fa
-    :git: https://github.com/hyperoslo/Sugar
+    :commit: cff5e71317132ac20c5644e8e7d1af3112d9a2b4
+    :git: https://github.com/systembugtj/Sugar
+  Tailor:
+    :commit: 5be2584a3d0f8e4cda2eaa73c6c7ea0d21980e33
+    :git: https://github.com/systembugtj/Tailor
 
 SPEC CHECKSUMS:
-  Cache: adbacf2672fbc9d48f552e03bbd4916510c39ac0
-  Hue: ab7efb15270e0bc764f2f468aa6f3f2728d52f2b
-  Imaginary: 642c6eb34ff2bd52404a70044599a8e2693e1e44
-  Spots: ed7d2d6a47de7a7a0a0ed83a9b9f4484f76dc418
-  Sugar: 41f2efa0244806f524ff2d77c951a6a43e81a0f3
-  SwiftHash: acf0f29032309a5c7a7f625595eade1aca97aca2
-  Tailor: caabfebed676fab6e00c0c173e05294ccf89861e
+  Cache: b3f230a4e2e30e13b52863eb3539794fcc5e1995
+  Hue: 987ac93ce357c44b6d4c87ebbbf00469d7382fe1
+  Imaginary: afe0d00925db2041e4c08e285b106a48f2390933
+  Spots: 06e6718ced4b2bdcc84be3c08c5c4c15842dbdc6
+  Sugar: 80dd0ecebb5d118bb3f6f82205e8028b85208727
+  Tailor: 9065a1955fe218e06280c82bf08abe12164f9b6b
 
-PODFILE CHECKSUM: 3c397b0fa0d19e538ffbf5f81c252404517a4007
+PODFILE CHECKSUM: 420df7358d978ba17aeed1b69a2bd7610c83f1a7
 
-COCOAPODS: 1.2.1
+COCOAPODS: 1.7.5

@@ -4,6 +4,10 @@ import Spots
 import Hue
 
 class GridHexCell: UICollectionViewCell, ItemConfigurable {
+    func computeSize(for item: Item, containerSize: CGSize) -> CGSize {
+        return CGSize(width: 125, height: 160)
+    }
+    
 
   lazy var label: UILabel = { [unowned self] in
     let label = UILabel(frame: CGRect.zero)
