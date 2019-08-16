@@ -23,4 +23,5 @@ Pod::Spec.new do |s|
   s.osx.frameworks = 'AppKit'
 
   s.pod_target_xcconfig = { 'SWIFT_VERSION' => '5.0' }
+
 end
